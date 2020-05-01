@@ -2,4 +2,5 @@
 ## 目录
 - 第一章 介绍
 - 第二章 环境配置
-- 第三章 ![回归问题](Chap3_Regression)
+- 第三章 [回归问题](Chap3_Regression)
+- 第四章 [数据类型](Chap4_DataType)
