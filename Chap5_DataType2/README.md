@@ -102,4 +102,4 @@
     - index是那个维度的序号
     - label在拥有dim维度的个数，应该和label内部的个数一致
     - label每行用index进行采样
-    - ![](gather.png)
+    - ![gather的运算效果](gather.png)

@@ -4,3 +4,5 @@
 - 第二章 环境配置
 - 第三章 [回归问题](Chap3_Regression)
 - 第四章 [数据类型](Chap4_DataType)
+- 第五章 [数据类型II](Chap5_DataType2)
+- 第六章 [梯度下降与反向传播](Chap6_GradientDesend)
