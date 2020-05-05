@@ -94,3 +94,19 @@
 ### Chap6-9 Himmelblau Function
 - 一般用于检测优化器的效果，有四个极小值点
 - 不同的初始化可以造成不同的优化结果
+
+### Chap6-10 补充课程，Numpy实现MLP
+- 和原来的实现有些许不太一样
+- 不过存在两个疑惑
+    - 如果想引入softmax+交叉熵，反传要怎么改(看完下一章回来瞅瞅)
+
+### Chap6-11 自己撸了一个batchSize版本的MLP
+- 将输入从[784,1]扩充到[784,bs]以后，直接影响的是derta矩阵和每一层的out
+- out和derta矩阵会从[out,1]变到[out,bs]，彼此不会产生影响
+- 进行迭代运算的时候，derta仅仅取决于当前的W，以及Out
+- nabla的值按照矩阵相乘[outsize,batchsize]@[batchsize,inputsize]，会变成对batch中每一个元素的偏导数进行求和运算，正好符合batch的定义
+    - 注意bias的偏导，也要乘以[batchsize,1]\(对于每个input而言，bias唯一)
+- 前向也可以进行batch运算
+- 因而直接拓展input的形状即可
+- 速度大概在bs=25的时候，提升了4-5倍
+- 注意不能直接融合input和output，因为中间存在非线性层
