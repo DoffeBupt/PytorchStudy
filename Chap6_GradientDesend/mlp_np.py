@@ -155,6 +155,5 @@ def main():
     print("{0} epochs, total time spent: {1}s".format(10, time.time() - st))
 
 
-
 if __name__ == '__main__':
     main()
