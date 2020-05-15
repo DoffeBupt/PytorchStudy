@@ -8,3 +8,5 @@
 - 第六章 [梯度下降与反向传播](Chap6_GradientDesend)
 - 第七章 [神经网络与全连接层](Chap7_NerualNetWorkAndFC)
 - 第八章 [过拟合与其解决](Chap8_Overfitting)
+- 第九章 [卷积神经网络](Chap9_CNN)
+- 第十章 [ResNet的实现](Chap10_ResNet)
